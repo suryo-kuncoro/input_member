@@ -12,11 +12,14 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://suryo-kuncoro.github.io/input_member",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -29,16 +32,6 @@
       ">0.2%",
       "not dead",
       "not op_mini all"
-    ],
-  },
-    "homepage": "https://github.com/suryo-kuncoro/input_member", 
-    "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build", // PASTIKAN script 'build' ada
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build", // BARU
-    "deploy": "gh-pages -d build" // BARU
     ],
     "development": [
       "last 1 chrome version",
