@@ -10,7 +10,13 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "lucide-react": "^0.263.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.x.x",
+    "postcss": "^8.x.x",
+    "autoprefixer": "^10.x.x"
   },
   "homepage": "https://suryo-kuncoro.github.io/input_member",
   "scripts": {
