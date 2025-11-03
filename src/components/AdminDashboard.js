@@ -143,7 +143,7 @@ export default function AdminDashboard({ currentUser, setCurrentUser }) {
   };
 
   const deleteProduct = async (id) => {
-    if (!confirm('Hapus produk ini?')) return;
+    if (!window.confirm('Hapus produk ini?')) return;
     
     const product = products.find(p => p.id === id);
     const updatedProducts = products.filter(p => p.id !== id);
