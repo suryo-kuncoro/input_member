@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ShoppingCart, X, LogIn, UserPlus, Lock } from 'lucide-react';
+import AdminDashboard from './components/AdminDashboard';
+import UserDashboard from './components/UserDashboard';
 
 export default function App() {
   const [currentUser, setCurrentUser] = useState(null);
