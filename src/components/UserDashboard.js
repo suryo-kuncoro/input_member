@@ -151,6 +151,9 @@ export default function UserDashboard({ currentUser, setCurrentUser }) {
     setOrders(updatedOrders);
     await save('orders', updatedOrders);
     alert('Pesanan berhasil dihapus');
+  } catch (error) {
+    console.error('Error in deleteOrder:', error);
+    alert('Gagal menghapus pesanan. Silakan coba lagi.');
   };
 
   const sendToAdmin = async () => {
