@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Package, Bell, LogOut, Home, ShoppingCart, Users, Settings } from "lucide-react";
 
 export default function DashboardLayout({ children }) {
@@ -11,18 +12,18 @@ export default function DashboardLayout({ children }) {
           Admin Panel
         </div>
         <nav className="flex-1 p-4 space-y-2">
-          <a href="#" className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-indigo-600">
-            <Home className="w-4 h-4" /> Dashboard
-          </a>
-          <a href="#" className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-indigo-600">
-            <ShoppingCart className="w-4 h-4" /> Orders
-          </a>
-          <a href="#" className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-indigo-600">
-            <Users className="w-4 h-4" /> Users
-          </a>
-          <a href="#" className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-indigo-600">
+          <Link to="/" className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-indigo-600">
+            <Home className="w-4 h-4" /> Home
+          </Link>
+          <Link to="/admin" className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-indigo-600">
+            <ShoppingCart className="w-4 h-4" /> Admin
+          </Link>
+          <Link to="/user" className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-indigo-600">
+            <Users className="w-4 h-4" /> User
+          </Link>
+          <Link to="/settings" className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-indigo-600">
             <Settings className="w-4 h-4" /> Settings
-          </a>
+          </Link>
         </nav>
         <button className="flex items-center gap-2 px-4 py-3 bg-indigo-800 hover:bg-indigo-600">
           <LogOut className="w-4 h-4" /> Logout
