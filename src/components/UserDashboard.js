@@ -145,7 +145,7 @@ export default function UserDashboard({ currentUser, setCurrentUser }) {
       return;
     }
 
-    if (!confirm('Yakin ingin menghapus pesanan ini?')) return;
+    if (!window.confirm('Yakin ingin menghapus pesanan ini?')) return;
 
     const updatedOrders = orders.filter(o => o.id !== id);
     setOrders(updatedOrders);
@@ -163,7 +163,7 @@ export default function UserDashboard({ currentUser, setCurrentUser }) {
       return;
     }
 
-    if (!confirm(`Kirim ${draftOrders.length} pesanan ke admin?`)) return;
+    if (!window.confirm(`Kirim ${draftOrders.length} pesanan ke admin?`)) return;
 
     // Update status to 'sent'
     const updatedOrders = orders.map(o =>
